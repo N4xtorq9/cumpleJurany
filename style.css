@@ -282,6 +282,7 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s;
+    
 }
 
 .btn-enviar:hover {
