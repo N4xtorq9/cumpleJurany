@@ -46,7 +46,7 @@ document.getElementById("rsvpForm").addEventListener("submit", function(event) {
     const cantidadAcompanantes = document.getElementById("acompanantes").value;
 
     // Redacción del mensaje estructurado usando saltos de línea codificados (%0A)
-    const mensajeTexto = `¡Hola! Confirmo mi asistencia a tu cumpleaños 🎂%0A%0A` +
+    const mensajeTexto = `¡Hola! Confirmo mi asistencia al cumpleaños de Jurany 🎂%0A%0A` +
                           `• *Nombre:* ${nombreInvitado}%0A` +
                           `• *¿Asiste?:* ${opcionAsistencia}%0A` +
                           `• *Acompañantes:* ${cantidadAcompanantes}`;
