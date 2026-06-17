@@ -34,12 +34,26 @@ body {
     color: white;
     font-weight: bold;
     font-family: "Caveat Brush", cursive;
+    font-size: 3rem;
+}
+.nombre1 {
+    color: white;
+    font-weight: bold;
+    font-family: "Caveat Brush", cursive;
+    font-size: 2.3rem;
+}
+
+.acompa {
+    color: white;
+    font-size: 2.3rem;
+    font-family: "Caveat Brush", cursive;
+    margin-top: 8px;
 }
 
 .años {
     margin-top: 8px;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
     font-family: "Caveat Brush", cursive;
 }
@@ -67,7 +81,7 @@ body {
 }
 
 .header h1 {
-    font-size: 2.3rem;
+    
     margin-bottom: 8px;
     letter-spacing: 1px;
 }
