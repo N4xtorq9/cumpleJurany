@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat+Brush&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Dosis:wght@200..800&family=Gruppo&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>🎁Cumple Jurany🎊</title>
+  </head>
+  <body>
+    <div class="invitacion-card">
+      <div class="header">
+        <h1 class="nombre">¡Cumpleaños de</h1>
+        <h1 class="nombre">Jurany González!</h1>
+        <button
+          type="button"
+          class="header-foto-boton"
+          id="abrirFoto"
+          aria-label="Abrir foto de Jurany en tamaño grande"
+        >
+          <img class="header-foto" src="img/1.webp" alt="Foto de Jurany" />
+        </button>
+        <br>
+        <h2>¡Acompáñame a celebrar!</h2>
+        <h1 class="años">¡Mis 29 Años!</h1>
+        
+      </div>
+
+      <div class="cuerpo">
+        <p class="mensaje">
+          "La vida es mejor cuando la compartimos con las personas que queremos.
+          Por eso, no puedes faltar a mi fiesta de cumpleaños."
+        </p>
+
+        <div class="detalles">
+          <div class="detalle-item">
+            <span class="icono">📅</span>
+            <div><strong>Fecha:</strong> Sábado, 01 de Julio de 2026</div>
+          </div>
+          <div class="detalle-item">
+            <span class="icono">⏰</span>
+            <div><strong>Hora:</strong> 8:00 PM</div>
+          </div>
+          <div class="detalle-item">
+            <span class="icono">📍</span>
+            <div>
+              <strong>Lugar comida:</strong> Enchilados Restaurante Cantina 🌮🌯🍹🥩🎂
+              ( Cl. 66 #63b 37, BellaVista, Bello)
+            </div>
+          </div>
+          <div class="detalle-item">
+            <span class="icono">🏠</span>
+            <div>
+              <strong>Lugar Reunión:</strong> Cerro Claro 🎂
+              ( Diagonal 67 #31-150 Apto 1522, Bello)🎂
+            </div>
+          </div>
+        </div>
+
+        <p class="contador-titulo">Faltan solo:</p>
+        <div class="contador">
+          <div class="tiempo-bloque">
+            <span class="tiempo-numero" id="dias">00</span>
+            <span class="tiempo-etiqueta">Días</span>
+          </div>
+          <div class="tiempo-bloque">
+            <span class="tiempo-numero" id="horas">00</span>
+            <span class="tiempo-etiqueta">Horas</span>
+          </div>
+          <div class="tiempo-bloque">
+            <span class="tiempo-numero" id="minutos">00</span>
+            <span class="tiempo-etiqueta">Min</span>
+          </div>
+          <div class="tiempo-bloque">
+            <span class="tiempo-numero" id="segundos">00</span>
+            <span class="tiempo-etiqueta">Seg</span>
+          </div>
+        </div>
+
+        <div class="formulario-rsvp">
+          <h3>Confirma tu asistencia</h3>
+          <form id="rsvpForm">
+            <div class="input-grupo">
+              <label for="nombre">Nombre Completo:</label>
+              <input
+                type="text"
+                id="nombre"
+                placeholder="Ej. Jurany Gonzalez"
+                required
+              />
+            </div>
+
+            <div class="input-grupo">
+              <label for="asistencia">¿Asistirás?</label>
+              <select id="asistencia" required>
+                <option value="" disabled selected>
+                  Selecciona una opción
+                </option>
+                <option value="Sí, ¡allí estaré!">
+                  Sí, ¡allí estaré de cabeza! 🎉
+                </option>
+                <option value="No podré asistir">
+                  Lamentablemente no puedo 😢
+                </option>
+              </select>
+            </div>
+
+            <div class="input-grupo">
+              <label for="acompanantes">Número de acompañantes:</label>
+              <select id="acompanantes">
+                <option value="0">Solo yo (0)</option>
+                <option value="1">1 Persona más</option>
+                <option value="2">2 Personas más</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-enviar">
+              📱 Confirmar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+<hr class="footer-divisor" />
+      <!-- --- PIE DE PÁGINA (FOOTER) --- -->
+      <footer class="pie-pagina">
+        <div class="footer-info">
+          <p><strong>👔 Vestimenta:</strong> Formal</p>
+          <p><strong>🎁 Regalos:</strong> Lluvia de Sobres 💸😁</p>
+        </div>
+        <hr class="footer-divisor" />
+        <p class="footer-agradecimiento">
+          ¡Tu presencia es su mejor regalo! Te esperamos con los brazos
+          abiertos.❤️
+        </p>
+        <p>💞Creado con mucho amor para mi gran amor.💞</p>
+        <br>
+        <br>
+        <p class="footer-creditos">
+          &copy;
+          <a class="portafolio" href="https://nestorportafolio.vercel.app/">Nestor Quiñones</a> 
+            | 2026 - Si deseas realizar tarjetas de invitación como esta, no dudes en contactarme.
+        </p>
+      </footer>
+    </div>
+
+    <div class="foto-modal" id="fotoModal" aria-hidden="true">
+      <button type="button" class="foto-modal-cerrar" id="cerrarFoto" aria-label="Cerrar imagen">×</button>
+      <img class="foto-modal-imagen" src="img/2.webp" alt="Foto de Jurany en grande" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

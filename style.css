@@ -1,0 +1,339 @@
+/* --- VARIABLES Y CONFIGURACIÓN GLOBAL --- */
+:root {
+    --color-principal: #6c5ce7;
+    --color-secundario: #a29bfe;
+    --color-oscuro: #2d3436;
+    --color-claro: #a200ff;
+    --fuente-texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-texto);
+    background-color: #f9f9fb;
+    color: var(--color-oscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.caveat-brush-regular {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nombre {
+    color: white;
+    font-weight: bold;
+    font-family: "Caveat Brush", cursive;
+}
+
+.años {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Caveat Brush", cursive;
+}
+
+/* --- TARJETA CONTENEDORA --- */
+.invitacion-card {
+    background: white;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Encabezado Llamativo */
+.header {
+    background-image: url(img/3.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    color: white;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.header-foto-boton {
+    display: block;
+    width: fit-content;
+    margin: 18px auto 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header-foto {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.header-foto-boton:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.95);
+    outline-offset: 4px;
+    border-radius: 999px;
+}
+
+.foto-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 1000;
+}
+
+.foto-modal.activo {
+    display: flex;
+}
+
+.foto-modal-imagen {
+    max-width: min(92vw, 760px);
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+
+.foto-modal-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.16);
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Cuerpo del contenido */
+.cuerpo {
+    padding: 30px 20px;
+}
+
+.mensaje {
+    font-style: italic;
+    color: #636e72;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* --- DETALLES DEL EVENTO (Bloque Gris) --- */
+.detalles {
+    background: #f1f2f6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    display: block; /* Flujo normal vertical */
+    text-align: left;
+}
+
+.detalle-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.detalle-item:last-child {
+    margin-bottom: 0; /* Quita el margen al último elemento */
+}
+
+.icono {
+    font-size: 1.3rem;
+}
+
+/* --- CUENTA REGRESIVA --- */
+.contador-titulo {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.contador {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    background: var(--color-claro);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.tiempo-bloque {
+    display: flex;
+    flex-direction: column;
+}
+
+.tiempo-numero {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+}
+
+.tiempo-etiqueta {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* --- FORMULARIO RSVP --- */
+.formulario-rsvp {
+    border-top: 2px dashed #dfe6e9;
+    padding-top: 25px;
+}
+
+.formulario-rsvp h3 {
+    margin-bottom: 15px;
+    color: var(--color-principal);
+    font-size: 1.3rem;
+}
+
+.input-grupo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-grupo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.input-grupo input, 
+.input-grupo select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-grupo input:focus, 
+.input-grupo select:focus {
+    border-color: var(--color-principal);
+}
+
+/* Botón interactivo de WhatsApp */
+.btn-enviar {
+    width: 100%;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+/* Animación Suave de Entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- ESTILOS DEL FOOTER --- */
+.pie-pagina {
+    margin-top: 30px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    color: #636e72;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+/* Bloque de notas importantes (Vestimenta/Regalos) */
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+/* Línea divisora sutil */
+.footer-divisor {
+    border: 0;
+    height: 1px;
+    background: #dfe6e9;
+    margin: 15px auto;
+    width: 60%;
+}
+
+/* Mensaje final */
+.footer-agradecimiento {
+    font-style: italic;
+    color: #2d3436;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Créditos pequeños */
+.footer-creditos {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.portafolio {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
