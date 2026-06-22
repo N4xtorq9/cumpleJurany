@@ -3,7 +3,7 @@
 // ==========================================
 // Parámetros: (Año, Mes [0-11], Día, Hora, Minutos, Segundos)
 // IMPORTANTE: Recuerda que los meses en JavaScript van de 0 a 11 (Julio es el mes 6)
-const fechaCumple = new Date(2026, 6, 1, 20, 0, 0).getTime(); 
+const fechaCumple = new Date(2026, 6, 4, 19, 30, 0).getTime(); 
 
 // Actualizar la cuenta regresiva cada 1 segundo (1000 milisegundos)
 const intervaloContador = setInterval(function() {
